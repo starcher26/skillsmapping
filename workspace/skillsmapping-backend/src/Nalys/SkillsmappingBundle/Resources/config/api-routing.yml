@@ -1,0 +1,15 @@
+skills:
+    type: rest
+    resource: Nalys\SkillsmappingBundle\Controller\SkillController
+    name_prefix: api_skills_
+users:
+    type: rest
+    resource: Nalys\SkillsmappingBundle\Controller\UserController
+    name_prefix: api_users_
+    methods: ['POST', 'PUT', 'GET', 'DELETE','OPTIONS']
+
+groups:
+    type: rest
+    resource: Nalys\SkillsmappingBundle\Controller\GroupController
+    name_prefix: api_groups_
+    methods: ['POST', 'PUT', 'GET', 'DELETE','OPTIONS']

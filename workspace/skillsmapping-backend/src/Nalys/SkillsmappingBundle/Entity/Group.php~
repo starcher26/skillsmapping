@@ -1,0 +1,25 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Mounir
+ * Date: 08/03/2017
+ * Time: 19:05
+ */
+
+namespace Nalys\SkillsmappingBundle\Entity;
+use FOS\UserBundle\Model\Group as BaseGroup;
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * @ORM\Entity
+ * @ORM\Table(name="nalys_group")
+ */
+class Group extends BaseGroup
+{
+    /**
+     * @ORM\Id
+     * @ORM\Column(type="integer")
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    protected $id;
+}

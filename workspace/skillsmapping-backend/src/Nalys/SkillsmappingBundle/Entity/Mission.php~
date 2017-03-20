@@ -1,0 +1,42 @@
+<?php
+
+namespace Nalys\SkillsmappingBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Mission
+ *
+ * @ORM\Table(name="nalys_mission")
+ * @ORM\Entity(repositoryClass="Nalys\SkillsmappingBundle\Repository\MissionRepository")
+ */
+class Mission
+{
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="name", type="string", length=255)
+     */
+    private $name;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="Nalys\SkillsmappingBundle\Entity\Customer", inversedBy="missions")
+     */
+    private $customer;
+
+    /**
+     * @ORM\Column(name="duration", type="string", length=255)
+     */
+    private $duration;
+
+
+}

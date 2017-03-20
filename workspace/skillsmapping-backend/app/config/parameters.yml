@@ -1,0 +1,15 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_host: db
+    database_port: null
+    database_name: skillsmapping
+    database_user: root
+    database_password: r00tSymfony
+    mailer_transport: smtp
+    mailer_host: null
+    mailer_user: skillsmapping-registration@test.com
+    mailer_password: null
+    secret: 3fd5c07742aa68254ebcd92e3a82bd73ea96af10
+    cors_allow_origin: 'http://localhost'
+    api_name: 'Skillsmapping Restful API'
+    api_description: 'This API provides data regarding all components involved in Skillsmapping'

@@ -1,0 +1,3 @@
+nalys_skillsmapping_homepage:
+    path:     /
+    defaults: { _controller: NalysSkillsmappingBundle:Default:index }
